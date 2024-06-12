@@ -1,5 +1,6 @@
 ; AutoHotkey - Windows automation and scripting language.
 ; https://www.autohotkey.com
+; https://www.autohotkey.com/docs/v1/KeyList.htm#modifier
 
 ; Hotstrings
 ;------------------
@@ -29,7 +30,7 @@ CloseTeamsMeetingBrowserTab() {
 	if (WinExist(teamsMeetingBrowserTitle)) {
 		; Wait until the URL opened the Teams app to join the meeting.
 		; Use regex to check for a few possible windows depending on the Teams version being used.
-		;	Chrome_WidgetWin_1 = The Teams meeting window title.
+		;	Chrome_WidgetWin_1 = The Teams meeting window class name.
 		previousTitleMatchMode := A_TitleMatchMode
 		SetTitleMatchMode, RegEx
 		WinWait, ahk_class i)(Chrome_WidgetWin_1),,3
