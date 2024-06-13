@@ -16,8 +16,8 @@
 
 ; Windows + Alt + P => Run multiple commands.
 #!p::
-	Run, pwsh -File "%a_scriptdir%\Hello.ps1"
-	Run, pwsh -File "%a_scriptdir%\Hello.ps1"
+	Run, pwsh -File "%a_scriptdir%\Hello.ps1" "First"
+	Run, pwsh -File "%a_scriptdir%\Hello.ps1" "Second"
 return
 
 
