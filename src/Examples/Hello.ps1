@@ -1,5 +1,5 @@
 param(
-	[string] $message = "Hello, Pacific PowerShell User Group!"
+	[string] $message = "Hello, Research Triangle PowerShell User Group!"
 )
 
 Write-Output $message
